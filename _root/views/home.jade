@@ -1,0 +1,11 @@
+.hero
+	h1 Transparent.ly is a platform for you to ask questions to the government, the policymakers, congressmen, and your representatives.
+.people
+	.person(ng-repeat='person in people')
+		img(ng-src="{{ 'http://avatars.io/twitter/' + person.twitter + '?size=large'}}")
+		p.name {{ person.name }}
+		p.position {{ person.position }}
+		a.btn.ask(ng-href="{{'/#/p/' + person._id}}")
+			.top
+				| Ask  
+			| {{ person.name.split(' ')[1] }}

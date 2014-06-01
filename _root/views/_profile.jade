@@ -1,0 +1,10 @@
+.profile
+	.content
+		img(ng-src="{{ 'http://avatars.io/twitter/' + person.twitter + '?size=large' }}")
+		.text
+			h2.name(ng-bind='person.name') Loading...
+			h2.position(ng-bind='person.position') Loading...
+			a.twitter(ng-href="{{ 'http://twitter.com/' + person.twitter }}")
+				i.fa.fa-twitter
+				| {{ '@' + person.twitter }}
+		a.ask.btn(ng-href="{{'#/p/' + person._id}}") {{ 'Ask ' + person.name.split(' ')[1] }}

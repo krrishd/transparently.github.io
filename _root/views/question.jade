@@ -1,0 +1,11 @@
+!= partial('_profile')
+.questions
+	.existing
+		.question
+			h3.title 
+				| {{ question.title + ' - ' }}
+				a.tweet.btn(ng-href="{{tweetLink}}") 
+					i.fa.fa-twitter
+					| Ask On Twitter
+			p.extended
+				| {{ question.extended }}

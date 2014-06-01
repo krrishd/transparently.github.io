@@ -1,0 +1,25 @@
+{
+  "name": "transparentlyFrontend",
+  "version": "0.0.0",
+  "authors": [
+    "Krish Dholakiya <krishna.dholakiya@gmail.com>"
+  ],
+  "description": "The frontend for transparent.ly, built in Angular.js and based on a Express.js/MongoDB backend",
+  "main": "js/ctrl.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angular-ui-router": "~0.2.10",
+    "font-awesome": "~4.1.0",
+    "animate.css": "~3.1.1"
+  }
+}

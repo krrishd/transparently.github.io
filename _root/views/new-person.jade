@@ -1,0 +1,12 @@
+.profile
+	.content
+		h1 Add A Politician
+.questions
+	.existing
+		.question
+			form(ng-submit="newPolitician()")
+				img(ng-src="{{ 'http://avatars.io/twitter/' + twitter + '?size=large' }}")
+				input(type="text", placeholder="Name (eg. Barack Obama)", ng-model="name")
+				input(type="text", placeholder="Position (eg. President, USA)", ng-model="position")
+				input(type="text", placeholder="Twitter (eg. @barackobama)", ng-model="twitter")
+				input.btn(type="submit", value="Submit")

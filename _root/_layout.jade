@@ -1,0 +1,35 @@
+doctype 5
+html
+	head
+		title Transparent.ly
+		// CSS
+		link(href="/main.css", type="text/css", rel="stylesheet")
+		// Libraries
+		script(src="/lib/angular/angular.min.js")
+		script(src="/lib/angular-ui-router/release/angular-ui-router.min.js")
+		// script(src="/js/scroll.easing.js")
+		// Controllers
+		script(src="/js/ctrl.js")
+		script(src="/js/homeCtrl.js")
+		script(src="/js/personCtrl.js")
+		script(src="/js/newPersonCtrl.js")
+		script(src="/js/questionCtrl.js")
+	body(ng-app="transparently")
+		header
+			a(href='/')
+				h1 Transparent
+					span.dot
+						| .
+					span.ly ly
+			nav
+				a(href='/')
+					i.fa.fa-home
+					| Home
+				a(href='/#/new')
+					i.fa.fa-plus
+					| Add A Politician
+		!= yield
+		footer
+			| Made by 
+			a(href="http://www.itskrish.co/?r=tly", target="_blank") Krish Dholakiya
+			|  for the National Day of Civic Hacking

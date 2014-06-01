@@ -1,0 +1,14 @@
+!= partial('_profile')
+.questions
+	.existing
+		.question(ng-repeat="question in questions")
+			a(ng-href="{{ '/#/question/' + question._id }}")
+				h3.title {{ question.title }}
+	.new
+		h2(id="ask") Ask A Question
+		form(ng-submit="newQuestion()")
+			input(type="text", placeholder="Question", ng-model="title")
+			textarea(ng-model="extended")
+			input(type="email", placeholder="Email Address", ng-model="email")
+			input.btn(type="submit", value="Submit")
+		
